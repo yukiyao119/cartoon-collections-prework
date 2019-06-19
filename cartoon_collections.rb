@@ -16,17 +16,11 @@ end
 def find_the_cheese(arr)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if arr.include?(cheese_types[0]) == true || arr.include?(cheese_types[1]) == true || arr.include?(cheese_types[2]) == true
-    arr.find do |element|
-      element.include?(cheese_types[0])
-  
-  
+  arr.find do |element|
+      cheese_types.include?(element)
+  end
 end
 
-[1, 3, 5, 7].find do |num|
-  num.odd?
-end
-  => 1
 
 
 
